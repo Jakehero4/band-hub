@@ -33,7 +33,7 @@ main {
 /* Grid layout for instruments */
 .instrument-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Flexible grid */
     gap: 20px; /* Space between grid items */
     max-width: 1200px;
     margin: 30px auto;
@@ -52,7 +52,6 @@ main {
     text-align: center;
     text-decoration: none;
     transition: background-color 0.3s ease;
-    margin: 10000px; /* Add margin around buttons to create space */
 }
 
 /* Change link text color and remove underline */
