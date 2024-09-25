@@ -52,7 +52,7 @@ main {
     text-align: center;
     text-decoration: none;
     transition: background-color 0.3s ease;
-    margin: 10px; /* Add margin around buttons to create space */
+    margin: 1000px; /* Add margin around buttons to create space */
 }
 
 /* Change link text color and remove underline */
