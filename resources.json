@@ -1,0 +1,26 @@
+{
+    "flute": [
+        {
+            "name": "Flute Sight Reading",
+            "file": "flute_basics.pdf"
+        },
+        {
+            "name": "Flute Basketball Band",
+            "file": "flute_sheet_music.pdf"
+        },
+        {
+            "name": "Flute Exercises",
+            "file": "flute_exercises.pdf"
+        }
+    ],
+    "oboe": [
+        {
+            "name": "Oboe Basics",
+            "file": "oboe_basics.pdf"
+        },
+        {
+            "name": "Oboe Sheet Music",
+            "file": "oboe_sheet_music.pdf"
+        }
+    ]
+}
