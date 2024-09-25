@@ -34,7 +34,7 @@ main {
 .instrument-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
+    gap: 20px; /* Space between grid items */
     max-width: 1200px;
     margin: 30px auto;
     padding: 20px;
@@ -52,6 +52,7 @@ main {
     text-align: center;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    margin: 10px; /* Add margin around buttons to create space */
 }
 
 /* Change link text color and remove underline */
