@@ -22,7 +22,7 @@ h1 {
 
 /* Main Content Styles */
 main {
-    max-width: 800px;
+    max-width: 1000px; /* Increased max-width for the container */
     margin: 30px auto;
     padding: 20px;
     background-color: white;
@@ -35,7 +35,7 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Flexible grid */
     gap: 20px; /* Space between grid items */
-    max-width: 1200px;
+    max-width: 1000px; /* Adjusted max-width for the grid to match main */
     margin: 30px auto;
     padding: 20px;
 }
