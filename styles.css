@@ -30,45 +30,46 @@ main {
     border-radius: 8px;
 }
 
-/* Resource List Styling */
-#resource-list {
-    margin-bottom: 30px;
+/* Grid layout for instruments */
+.instrument-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
 }
 
-.resource-item {
-    margin-bottom: 15px;
-}
-
-.resource-item a {
-    font-size: 1.1rem;
-    text-decoration: none;
-    color: #6200ea;
-    transition: color 0.3s ease;
-}
-
-.resource-item a:hover {
-    color: #3700b3;
-}
-
-/* Back Button Styling */
-button {
+/* Instrument button styling */
+.instrument {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #6200ea;
     color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+/* Change link text color and remove underline */
+.instrument h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: black; /* Change text color to black */
+    text-decoration: none; /* Remove underline */
+}
+
+.instrument:hover {
     background-color: #3700b3;
 }
 
-button:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(98, 0, 234, 0.5);
+/* Ensure the anchor tag behaves like a block element */
+.instrument {
+    display: block;
+    width: 100%;
 }
 
 /* Footer Styles */
