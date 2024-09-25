@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrument Resources</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="instrument-title">Instrument Resources</h1>
+    </header>
+    <main>
+        <h2>Available Files:</h2>
+        <ul id="file-list"></ul>
+        <a href="../../index.html">Back to Instrument List</a>
+    </main>
+    <footer>
+        <p>© 2024 Band Hub. All rights reserved.</p>
+    </footer>
+    <script>
+        const instrument = window.location.pathname.split('/').pop().split('.')[0];
+        const title = instrument.charAt(0).toUpperCase() + instrument.slice(1).replace(/_/g, ' ');
+        document.getElementById('instrument-title').innerText = title + ' Resources';
+        
+        const files = [
+            // List all files manually for now, or later can be fetched from the server
+            '01 ' + title + '.pdf',
+            '02 ' + title + '.pdf',
+            // Add more as needed or implement server-side fetching if possible
+        ];
+
+        const fileListElement = document.getElementById('file-list');
+        files.forEach(file => {
+            const li = document.createElement('li');
+            li.innerHTML = `<a href="${file}">${file}</a>`;
+            fileListElement.appendChild(li);
+        });
+    </script>
+</body>
+</html>
