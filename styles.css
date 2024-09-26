@@ -34,7 +34,7 @@ main {
 .instrument-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Keep reasonable min-width */
-    gap: 40px; /* Increased space between grid items */
+    gap: 40px 80px; /* Increased horizontal space */
     margin: 20px auto; /* Reduced margin */
     padding: 20px;
 }
