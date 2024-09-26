@@ -33,10 +33,9 @@ main {
 /* Grid layout for instruments */
 .instrument-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10000px, 1fr)); /* Increased min-width */
-    gap: 10000px; /* Increased space between grid items */
-    max-width: 1000px; /* Adjusted max-width for the grid to match main */
-    margin: 10000px auto;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Set min-width to a reasonable value */
+    gap: 20px; /* Adjusted space between grid items */
+    margin: 20px auto; /* Reduced margin */
     padding: 20px;
 }
 
@@ -52,7 +51,6 @@ main {
     text-align: center;
     text-decoration: none;
     transition: background-color 0.3s ease;
-    height: 100%; /* Ensure buttons fill the grid area */
 }
 
 /* Change link text color and remove underline */
