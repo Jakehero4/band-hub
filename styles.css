@@ -33,10 +33,9 @@ main {
 /* Grid layout for instruments */
 .instrument-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Keep reasonable min-width */
-    gap: 40px 80px; /* Increased horizontal space */
-    margin: 20px auto; /* Reduced margin */
-    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Set min-width for buttons */
+    gap: 40px; /* Vertical and horizontal space between grid items */
+    padding: 20px; /* Added padding for overall grid */
 }
 
 /* Instrument button styling */
