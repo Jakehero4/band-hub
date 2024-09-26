@@ -22,7 +22,7 @@ h1 {
 
 /* Main Content Styles */
 main {
-    max-width: 1000px; /* Increased max-width for the container */
+    max-width: 1000px;
     margin: 30px auto;
     padding: 20px;
     background-color: white;
@@ -33,9 +33,9 @@ main {
 /* Grid layout for instruments */
 .instrument-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Set min-width for buttons */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Reduced min-width for buttons */
     gap: 40px; /* Vertical and horizontal space between grid items */
-    padding: 20px; /* Added padding for overall grid */
+    padding: 20px;
 }
 
 /* Instrument button styling */
