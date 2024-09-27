@@ -33,7 +33,7 @@ main {
 /* Grid layout for instruments */
 .instrument-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Reduced min-width for buttons */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 100fr)); /* Reduced min-width for buttons */
     gap: 40px; /* Vertical and horizontal space between grid items */
     padding: 20px;
 }
