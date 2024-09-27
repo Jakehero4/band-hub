@@ -33,8 +33,8 @@ main {
 /* Grid layout for instruments */
 .instrument-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr)); /* Reduced min-width for buttons */
-    gap: 10px; /* Vertical and horizontal space between grid items */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Set a more reasonable minimum width */
+    gap: 15px; /* Slightly increased space between grid items */
     padding: 10px;
 }
 
@@ -45,18 +45,19 @@ main {
     justify-content: center;
     background-color: #6200ea;
     color: white;
-    padding: 10px;
+    padding: 15px;
     border-radius: 8px;
     text-align: center;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    width: 100%;
+    height: 100%; /* Ensure buttons grow to fill the grid cell */
 }
 
-/* Change link text color and remove underline */
 .instrument h2 {
     margin: 0;
-    font-size: 1.5rem;
-    color: black; /* Change text color to black */
+    font-size: 1.2rem;
+    color: white; /* Adjust text color to white for better contrast */
     text-decoration: none; /* Remove underline */
 }
 
@@ -64,11 +65,6 @@ main {
     background-color: #3700b3;
 }
 
-/* Ensure the anchor tag behaves like a block element */
-.instrument {
-    display: block;
-    width: 100%;
-}
 
 /* Footer Styles */
 footer {
