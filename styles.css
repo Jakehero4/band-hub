@@ -33,9 +33,9 @@ main {
 /* Grid layout for instruments */
 .instrument-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 100fr)); /* Reduced min-width for buttons */
-    gap: 100px; /* Vertical and horizontal space between grid items */
-    padding: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr)); /* Reduced min-width for buttons */
+    gap: 10px; /* Vertical and horizontal space between grid items */
+    padding: 10px;
 }
 
 /* Instrument button styling */
@@ -45,7 +45,7 @@ main {
     justify-content: center;
     background-color: #6200ea;
     color: white;
-    padding: 200px;
+    padding: 10px;
     border-radius: 8px;
     text-align: center;
     text-decoration: none;
