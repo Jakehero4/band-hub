@@ -1,77 +1,66 @@
-/* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
+/* Reset some default styles */
+body, h1, h2, p {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
     color: #333;
 }
 
+/* Header styles */
 header {
-    background-color: #6200ea;
-    color: white;
-    padding: 20px;
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-
-/* Main Content Styles */
+/* Main styles */
 main {
-    max-width: 1000px;
-    margin: 30px auto;
     padding: 20px;
-    background-color: white;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
 }
 
-/* Grid layout for instruments */
+/* Instrument grid styles */
 .instrument-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Set a more reasonable minimum width */
-    gap: 15px; /* Slightly increased space between grid items */
-    padding: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
 }
 
-/* Instrument button styling */
 .instrument {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #6200ea;
-    color: white;
-    padding: 15px;
-    border-radius: 8px;
+    display: block;
     text-align: center;
+    padding: 20px;
+    background: #008cba;
+    color: white;
     text-decoration: none;
-    transition: background-color 0.3s ease;
-    width: 100%;
-    height: 100%; /* Ensure buttons grow to fill the grid cell */
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
 }
 
 .instrument h2 {
-    margin: 0;
-    font-size: 1.2rem;
-    color: white; /* Adjust text color to white for better contrast */
-    text-decoration: none; /* Remove underline */
+    margin: 10px 0 0;
+    font-size: 1.2em;
 }
 
+/* Hover effects for buttons */
 .instrument:hover {
-    background-color: #3700b3;
+    background: #005f7f;
+    transform: translateY(-3px);
 }
 
-
-/* Footer Styles */
+/* Footer styles */
 footer {
+    background: #35424a;
+    color: #ffffff;
     text-align: center;
-    padding: 10px;
-    font-size: 0.9rem;
-    background-color: #f4f4f9;
-    color: #666;
-    border-top: 1px solid #ddd;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
